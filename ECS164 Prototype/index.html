@@ -1,0 +1,389 @@
+<link rel="stylesheet" href="./basic.css">
+<div class="header">
+    <a href="./index.html"><img src="./ucdavis_logo_white.png"></a>
+    <a class = "button" href="#" class="right">Logout</a>
+    <user>John Smith</user>
+  </div>
+   
+<div class="navbar">
+  <a href="./index.html"> <img class = "navbar" src="./dashboard.png">My Dashboard</a>
+  <a href="./academic.html"> <img class = "navbar" src="./academic.png"> My Academic</a>
+  <a href="./finance.html"> <img class = "navbar" src="./finance.png">My Finance</a>
+  <a href="./campus.html"> <img class = "navbar" src="./campus.png">My Campus</a>
+  <a type="button" class="right" id = "edit" style = "display: inline-flex;">Edit</a>
+  <a type="button" class="right" id = "save" style = "display: none;">Save</a>
+  <a type="button" class="right" id = "save_layout" style = "display: none;">Save Layout</a>
+</div>
+
+<div class="body" id = "normal_page" style="display: inline;">
+
+  <div class="column1" style="width: 25%;">
+    <div class="side">
+        <h2 class="profiletext">Personal Profile</h2>
+
+    </div>
+  </div>
+
+  <div class="column2" style="width: 74.5%;">
+    <div class="tile" id="canvas" style="display: block;">
+      <button class="remove-tile" id="canvas" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <div class="title">Canvas</div>
+      <div class="text">The sky has your skin crawling.
+  
+        Style wants to set things right.
+        
+        A classical composition says goodbye to the shooter.
+        
+        The clear star that is yesterday slips on a banana peel.
+        
+        Colorful clay ought to be sterilized
+        
+        That way welcomes spring!
+        
+        Abstraction comes asking for bread.
+        
+        An old apple does not make any sense.
+        
+        Too long a stick is a storyteller without equal.
+        
+        A caring mother is not yet ready to die.</div>
+    </div>
+
+    <div class="tile" id = "oasis" style="display: block;">
+      <button class="remove-tile" id="oasis" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <div class="title">Oasis</div>
+      <div class="text">Today is gonna be the day that they're gonna throw it back to you
+        And by now, you should've somehow realised what you gotta do
+        I don't believe that anybody feels the way I do about you now
+        And backbeat, the word is on the street that the fire in your heart is out
+        I'm sure you've heard it all before, but you never really had a doubt
+        I don't believe that anybody feels the way I do about you now</div>
+    </div>
+
+    <div class="tile" id = "schedule" style="display: block;">
+      <button class="remove-tile" id="schedule" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <div class="title">Schedule</div>
+      <div class="text">Trickery approaches at high velocity!
+  
+        A sickingly prodigous profile ought to be sterilized
+        
+        The legend of the raven's roar is like a summer breeze.
+        
+        Camouflage paint is not yet ready to die.
+        
+        A cranky old lady brings both pleasure and pain.
+        
+        Trickery brings both pleasure and pain.
+        
+        Stew and rum stole the goods.
+        
+        A sickingly prodigous profile asked you a question?
+        
+        Organisational culture visits Japan in the winter.
+        
+        An excitable dog in a paddling pool can get both high and low.</div> 
+    </div>
+
+    <div class="tile" id = "calendar" style="display: block;">
+      <button class="remove-tile" id="calendar" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> Calendar </h2>
+    </div>
+
+    <div class="tile" id="library" style="display: none;">
+      <button class="remove-tile" id="library" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> library </h2> 
+    </div>
+
+    <div class="tile" id = "catalog" style="display: none;">
+      <button class="remove-tile" id="catalog" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> Catalog </h2>
+    </div>
+
+    <div class="tile" id = "tile7" style="display: none;">
+      <button class="remove-tile" id="tile3" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>SMALLER </h2>
+    </div>
+
+    <div class="tile" id = "tile8" style="display: none;">
+      <button class="remove-tile" id="tile4" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>INVISIBLE </h2>
+    </div> 
+
+    <div class="tile" id="tile9" style="display: none;">
+      <button class="remove-tile" id="tile1" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>STRANGE </h2> 
+    </div>
+
+    <div class="tile" id = "tile10" style="display: none;">
+      <button class="remove-tile" id="tile2" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>SMALLER </h2>
+    </div>
+
+    <div class="tile" id = "tile11" style="display: none;">
+      <button class="remove-tile" id="tile3" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>SMALLER </h2>
+    </div>
+
+    <div class="tile" id = "tile12" style="display: none;">
+      <button class="remove-tile" id="tile4" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>INVISIBLE </h2>
+    </div>   
+    
+    <div class="tile" id="tile13" style="display: none;">
+      <button class="remove-tile" id="tile1" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>STRANGE </h2> 
+    </div>
+
+    <div class="tile" id = "tile14" style="display: none;">
+      <button class="remove-tile" id="tile2" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>SMALLER </h2>
+    </div>
+
+    <div class="tile" id="tile15" style="display: none;">
+      <button class="remove-tile" id="tile1" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>STRANGE </h2> 
+    </div>
+
+    <div class="tile" id = "tile16" style="display: none;">
+      <button class="remove-tile" id="tile2" onclick = "remove_tile(this.id)" style = "display: none;">
+        ―
+      </button>
+      <h2 class="tiletext"> SOMETHING <br>SMALLER </h2>
+    </div>
+
+    <div class="tile" id = "tileadd" style="display: none; justify-content: center; align-items: center;">
+      <button class="add_button" onclick="add_tile()" style = "float: center; ">
+        +
+      </button>
+      <p style = "float: center; ">Add a Tile</p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="body" id = "edit_page" style="display: none;">
+
+  <div class = "row">
+      <p style = "margin-bottom: 3%;"><h1>My Academic</h1></p>
+      <div>
+        <Button class="tile_small" id = "canvas" style = "background: #aaa;" onclick="change_color(this)">
+          <p style = "float: center; ">Canvas</p>
+        </Button>
+        <Button class="tile_small" id = "oasis" style = "background: #aaa;" onclick="change_color(this)">
+          <p style = "float: center; ">Oasis</p>
+        </Button>
+        <Button class="tile_small" id = "schedule" style = "background: #aaa;" onclick="change_color(this)">
+          <p style = "float: center; ">Schedule</p>
+        </Button>
+        <Button class="tile_small" id = "calendar" style = "background: #aaa;" onclick="change_color(this)">
+          <p style = "float: center; ">Calendar</p>
+        </Button>
+        <Button class="tile_small" id = "library" style = "background: #aaa;" onclick="change_color(this)">
+          <p style = "float: center; ">library</p>
+        </Button>
+        <Button class="tile_small" id = "catalog" style = "background: #aaa;" onclick="change_color(this)">
+          <p style = "float: center; ">Catalog</p>
+        </Button>
+      </div>
+  </div>
+
+  <div class = "row">
+    <p style = "margin-bottom: 3%;"><h1>My Finance</h1></p>
+    <div>
+      <Button class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </Button>
+      <Button class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </Button>
+      <Button class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </Button>
+      <Button class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </Button>
+      <Button class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </Button>
+      <Button class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </Button>
+    </div>
+  </div>
+
+  <div class = "row">
+    <p style = "margin-bottom: 3%;"><h1>My Campus</h1></p>
+    <div>
+      <div class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </div>
+      <div class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </div>
+      <div class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </div>
+      <div class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </div>
+      <div class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </div>
+      <div class="tile_small" id = "small1" style = "background: #aaa;" onclick="change_color(this)">
+        <p style = "float: center; ">Example</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<div class="footer">
+  <h2>footer</h2>
+</div>
+
+<script LANGUAGE="JavaScript">
+  var remove_button = document.getElementsByClassName("remove-tile")
+  var tilelist = document.getElementsByClassName("tile")
+  var choicelist = document.getElementsByClassName("tile_small")
+
+
+  document.getElementById("edit").onclick = function() {
+    for (var i = 0; i < remove_button.length; i++){
+      remove_button[i].style.display = "inline-flex"
+    }
+    document.getElementById("tileadd").style.display = "inline-flex"
+    this.style.display = "none"
+    document.getElementById("save").style.display = "inline-flex"
+  }
+  document.getElementById("save").onclick = function() {
+    for (var i = 0; i < remove_button.length; i++){
+      remove_button[i].style.display = "none"
+    }
+    document.getElementById("tileadd").style.display = "inline-flex"
+    this.style.display = "none"
+    document.getElementById("edit").style.display = "inline-flex"
+  }
+  
+  function remove_tile(this_id) {
+    for (var i = 0; i < tilelist.length; i++){
+      if (tilelist[i].id === this_id){
+        tilelist[i].style.display = "none"
+      }
+    }
+  }
+
+  function change_color(element) {
+    if (element.getAttribute("style") === "background: #555;"){
+      element.setAttribute("style", "background: #aaa;")
+    }
+    else{
+      element.setAttribute("style", "background: #555;")
+    }
+  }
+  
+  function add_tile(){
+    document.getElementById("normal_page").style.display = "none"
+    document.getElementById("edit_page").style.display = "inline"
+    document.getElementById("save").style.display = "none"
+    document.getElementById("save_layout").style.display = "inline-flex"
+
+    for (var i = 0; i < tilelist.length; i++){
+      if (tilelist[i].id === "tileadd"){
+        tilelist[i].style.display = "none"
+      }
+    }
+
+
+
+    for (var i = 0; i < tilelist.length; i++){
+      if (tilelist[i].style.display === "block"){
+        for (var j = 0; j < choicelist.length; j++){
+          if (tilelist[i].id === choicelist[j].id){
+            choicelist[j].setAttribute("style", "background: #555;")
+          }
+        }
+      }
+      else{
+        for (var j = 0; j < choicelist.length; j++){
+          if (tilelist[i].id === choicelist[j].id){
+            choicelist[j].setAttribute("style", "background: #aaa;")
+          }
+        }
+      }
+    }
+  }
+
+  
+
+  document.getElementById("save_layout").onclick = function(){
+
+
+    for (var i = 0; i < choicelist.length; i++){
+      if (choicelist[i].getAttribute("style") === "background: #555;"){
+        for (var j = 0; j < tilelist.length; j++){
+          if (choicelist[i].id === tilelist[j].id){
+            tilelist[j].style.display = "block"
+          }
+        }
+      }
+      else{
+        for (var j = 0; j < tilelist.length; j++){
+          if (choicelist[i].id === tilelist[j].id){
+            tilelist[j].style.display = "none"
+          }
+        }
+      }
+    }
+
+    document.getElementById("normal_page").style.display = "inline"
+    document.getElementById("edit_page").style.display = "none"
+    for (var i = 0; i < remove_button.length; i++){
+      remove_button[i].style.display = "none"
+    }
+    this.style.display = "none"
+    document.getElementById("edit").style.display = "inline-flex"
+
+    for (var i = 0; i < tilelist.length; i++){
+      if (tilelist[i].id === "tileadd"){
+        tilelist[i].style.display = "none"
+      }
+    }
+
+    
+
+
+  }
+
+
+</script>
